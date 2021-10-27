@@ -1,0 +1,30 @@
+.heading{
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+p{
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    list-style-position:inside;  
+    list-style-type:upper-roman;
+}
+
+li{
+    text-align:center;
+}
+
+@media(min-width:576px) {
+
+}
+
+.container-fluid{
+    background-color: red;
+}
+
+.highlight{
+    color:red;
+}
