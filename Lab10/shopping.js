@@ -12,7 +12,7 @@ function listItems(){
 
 //buttons
 function addToEnd(){
-    items.push(prompt("Enter the item you need to add to the end"));
+    items.push(prompt("Enter the item you need to add to the end of your lsit"));
     listItems();
 }
 
@@ -22,7 +22,7 @@ function removeFromEnd(){
 }
 
 function addToStart(){
-    items.unshift(prompt("Enter item you want to the list at the top"));
+    items.unshift(prompt("Enter item you want to the list at the top of your list"));
     listItems();
 }
 

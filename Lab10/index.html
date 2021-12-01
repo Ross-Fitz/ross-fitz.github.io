@@ -2,23 +2,70 @@
 <html>
 <head>
     <style>
+
         button{
             background-color:black;
             color:white;
+            font-family: fantasy;
         }
+        .container-1{
+          display: flex; 
+          justify-content:space-around;
+          text-align: center;
+          font-family: cursive;
+          color: white;
+          background-image: url("shopping.jpg");
+        
+
+        }
+        .container-box-1{
+            flex-basis: 75%;
+            border-style: dotted;
+            border-color: black;
+        }
+        .container-box-2{
+            flex-basis: 25%;
+            border-style: dotted;
+            border-color: black;
+            background-color:orangered;
+        }
+        p{
+            font-family: fantasy;
+            font-size: 20px;
+        }
+        li{
+            font-size: 26px;
+            font-family:cursive;
+            list-style-position: inside;
+        }
+
     </style>    
     <title> Grocery Shopping </title>
 </head>
 <body style="background-color:goldenrod"> 
     <div>
         <h1> My shopping list. </h1>
-        <h2 id="items"> Items </h2>
-        <ul id="list"></ul>
-        <button onclick=addToEnd()>Add to end</button>
-        <button onclick=removeFromEnd()>Remove from end</button>
-       <button onclick=addToStart()>Add to start</button>
-        <button onclick=removeFromStart()>Remove from start</button>
-        <script src="shopping.js"></script>
     </div>
+        
+
+
+
+    <div class="container-1">
+        <div class="container-box-1">  
+            <h2 id="items"> Items </h2>
+            <ul id="list" style="list-style:circle"></ul>
+        </div> 
+        <div class="container-box-2">
+            <p> Add to the list: <br>
+            <button onclick=addToStart()>Add to start</button> <br>
+            <button onclick=addToEnd()>Add to end</button> <br>
+            </p>
+            <p> Remove from list: <br> 
+            <button onclick=removeFromStart()>Remove from start</button> <br>
+            <button onclick=removeFromEnd()>Remove from end</button>
+            </p>
+        </div>
+    </div>
+    <script src="shopping.js"></script>
 </body>
 </html>
