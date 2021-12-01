@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button{
+            background-color:black;
+            color:white;
+        }
+    </style>    
+    <title> Grocery Shopping </title>
+</head>
+<body style="background-color:goldenrod"> 
+    <div>
+        <h1> My shopping list. </h1>
+        <h2 id="items"> Items </h2>
+        <ul id="list"></ul>
+        <button onclick=addToEnd()>Add to end</button>
+        <button onclick=removeFromEnd()>Remove from end</button>
+       <button onclick=addToStart()>Add to start</button>
+        <button onclick=removeFromStart()>Remove from start</button>
+        <script src="shopping.js"></script>
+    </div>
+</body>
+</html>
